@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        حاسبة الزكاة
+    </title>
+    <link rel="shortcut icon" href="zakat.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   
+    <div class="container">
+        <div class="container_flex">
+            <div class="box">
+                <h2>
+                    حاسبة الزكاة
+                </h2>
+                <p>
+                    الاستفادة من الحاسبة لمعرفة مقدار الزكاة الواجب أخراجها.
+                </p>
+                <form>
+                    <div class="price1">
+                        <div class="way">
+                            <button id="hijri" class="active"> سنة هجرية 2.5% </button>
+                            <button id="miladi"> سنة ميلادية 2.577% </button>
+                        </div>
+                        <label for="money">قيمة المال الذى املكة</label>
+                        <div class="price_inside">
+                            <input type="number" min="0" id="money">
+                            <section>
+                                ج.م
+                            </section>
+                        </div>
+                        <button id="count">
+                            احسب
+                        </button>
+                    </div>
+
+                    <div class="box2">
+                        <h2>
+                            إجمالي الزكاة المستحقة
+                        </h2>
+                        <hr>
+                        <div class="mablaqh">
+                            <div class="number_count">
+                                0
+                            </div>
+                            <p>
+                                جنية مصري
+                            </p>
+                            <div class="adding_money">
+                                <div class="adding_money_inpt">
+                                    <section>
+                                        مبلغ إضافي للزكاة
+                                    </section>
+                                    <input type="number" min="0" placeholder="0">
+                                    <article>
+                                        ج.م
+                                    </article>
+                                </div>
+                                <button id="adding">
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                        <div class="after_discount">
+                            
+                        </div>
+                    </div>
+                </form>
+
+                <div class="rest">
+                    <div class="rest_inside">
+                        <h2>باقي المبلغ بعد خصم الزكاة</h2>
+                        <div class="oba">
+                            <h2 id="zero">0</h2> 
+                            <span id="span_oba" style='margin-right: 7px ;font-size: 1.5rem; margin-bottom: 6px;' >ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
